@@ -42,7 +42,7 @@ def webhook():
 					with open('messages.json') as data_file:
 						data = json.load(data_file)
 					
-
+					log(data["messages"][0]["message"][0])
                     send_message(sender_id, data["messages"][0]["message"][0])
 
                 if messaging_event.get("delivery"):  # delivery confirmation
