@@ -18,7 +18,7 @@ def verify():
 		return request.args["hub.challenge"], 200
 
 	return "Hello world", 200
-s
+
 
 @app.route('/', methods=['POST'])
 def webhook():
