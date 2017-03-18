@@ -1,6 +1,8 @@
 {
-	'messages':[
-		{'message':['hi','hello','hey'],
-		 'answer': 'Hello to you too!'},
-	]
+    "messages": [
+        {
+            "message": ["hi","hello","hey"],
+            "answer": "Hello to you too!"
+        }
+    ]
 }
