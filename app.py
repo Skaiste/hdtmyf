@@ -47,13 +47,11 @@ string3 = ""
 					recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
 					message_text = messaging_event["message"]["text"]  # the message's text
 
-        			#with open('messages.json') as answer_file:
-					#	answers = json.load(answer_file)
-					#log(answers["messages"][0]["message"][0])
+        			with open('messages.json') as answer_file:
+						answers = json.load(answer_file)
 
-                    if(string1 or string 2 in messaging_text)
-
-					send_message(sender_id, 'yeboi')
+                    if any(x in message_text for x in answers["messages"][0]["message"]):
+						send_message(sender_id, answers["messages"][0]["answer"])
 
 				if messaging_event.get("delivery"):  # delivery confirmation
 					pass
