@@ -1,8 +1,12 @@
 {
     "messages": [
         {
-            "message": ["hi","hello","hey"],
-            "answer": "Hello to you too!"
-        }
+            "message": ["hi","hello","hey","Hi","Hey","Hello"],
+            "answer": "Hello to you too! How are you feeling bitch?"
+        },
+        
+        	"message2": ["good", "great","fine","Good","Great","Fine"]
+        	"answer2": ["I am glad to hear that. How was your day?"]
+        
     ]
 }

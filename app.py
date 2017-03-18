@@ -45,6 +45,11 @@ def webhook():
 					if any(x in message_text for x in answers["messages"][0]["message"]):
 						send_message(sender_id, answers["messages"][0]["answer"])
 
+					if any(x in message_text for x in answers["messages"][1]["message2"]):
+						send_message(sender_id, answers["messages"][1]["answer2"])
+
+
+
 					if messaging_event.get("delivery"):  # delivery confirmation
 						pass
 
