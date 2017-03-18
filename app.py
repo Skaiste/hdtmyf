@@ -10,15 +10,15 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def verify():
-# when the endpoint is registered as a webhook, it must echo back
-# the 'hub.challenge' value it receives in the query arguments
+	# when the endpoint is registered as a webhook, it must echo back
+	# the 'hub.challenge' value it receives in the query arguments
 	if request.args.get("hub.mode") == "subscribe" and request.args.get("hub.challenge"):
 		if not request.args.get("hub.verify_token") == os.environ["VERIFY_TOKEN"]:
 			return "Verification token mismatch", 403
 		return request.args["hub.challenge"], 200
 
 	return "Hello world", 200
-
+s
 
 @app.route('/', methods=['POST'])
 def webhook():
@@ -39,11 +39,11 @@ def webhook():
 					recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
 					message_text = messaging_event["message"]["text"]  # the message's text
 
-					with open('messages.json') as data_file:
-						data = json.load(data_file)
+					with open('messages.json') as answer_file:
+						answers = json.load(answer_file)
 
-					log(data["messages"][0]["message"][0])
-					send_message(sender_id, data["messages"][0]["message"][0])
+					log(answers["messages"][0]["message"][0])
+					send_message(sender_id, answers["messages"][0]["message"][0])
 
 				if messaging_event.get("delivery"):  # delivery confirmation
 					pass
