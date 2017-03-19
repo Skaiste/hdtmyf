@@ -24,9 +24,8 @@
         },
 
         {
-        	"message": ["I", "I'm", "am", "very", "calm"],
-        	"answer": "It is okay to cry."
-        }
-
+        	"message": ["I", "am","calm"],
+        	"answer": "it is okay to cry"
+        },
     ]
 }
