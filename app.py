@@ -41,12 +41,13 @@ def webhook():
 
 					with open('messages.json') as answer_file:
 						answers = json.load(answer_file)
-
-					if any(x in message_text for x in answers["messages"][0]["message"]):
-						send_message(sender_id, answers["messages"][0]["answer"])
-
-					if any(x in message_text for x in answers["messages"][1]["message2"]):
-						send_message(sender_id, answers["messages"][1]["answer2"])
+					
+					
+					for i in range(0,5):
+						
+						if any(x in message_text for x in answers["messages"][i]["message"]):
+						send_message(sender_id, answers["messages"][i]["answer"])
+	
 
 
 

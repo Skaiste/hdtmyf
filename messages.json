@@ -4,9 +4,29 @@
             "message": ["hi","hello","hey","Hi","Hey","Hello"],
             "answer": "Hello to you too! How are you feeling bitch?"
         },
-        
-        	"message2": ["good", "great","fine","Good","Great","Fine"]
-        	"answer2": ["I am glad to hear that. How was your day?"]
-        
+        {
+        	"message": ["good", "great","fine","Good","Great","Fine"],
+        	"answer": "I am glad to hear that. How was your day?"
+        },
+
+        {
+        	"message": ["sad", "bad","upset","Sad","Bad","Upset"],
+        	"answer": "Why don't you tell me why?"
+        },
+        {
+        	"message": ["because","Because","the","be","of","to","and","that","have","not","with","around","would"],
+        	"answer": "Do you think you're being fair?"
+        },
+
+        {
+        	"message": ["damnit ", "it", "hudutumoif"],
+        	"answer": "I'm sorry, but please try calm down"
+        },
+
+        {
+        	"message": ["I", "I'm", "am", "very", "calm"],
+        	"answer": "It is okay to cry."
+        }
+
     ]
 }
