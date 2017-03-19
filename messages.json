@@ -1,31 +1,37 @@
 {
     "messages": [
         {
-            "message": ["hi","hello","hey","Hi","Hey","Hello"],
-            "answer": "Hello to you too! How are you feeling bitch?"
+            "message": ["hi","hello","hey","Hi","Hey","Hello", "howdy", "therapist", "Therapist"],
+            "answer": "Hello to you too! How are you feeling today?"
         },
         {
-        	"message": ["good", "great","fine","Good","Great","Fine"],
-        	"answer": "I am glad to hear that. How was your day?"
-        },
-
-        {
-        	"message": ["sad", "bad","upset","Sad","Bad","Upset"],
-        	"answer": "Why don't you tell me why?"
-        },
-        {
-        	"message": ["because","Because","the","be","of","to","and","that","have","not","with","around","would"],
-        	"answer": "Do you think you're being fair?"
+            "message": ["good", "great","fine","Good","Great","Fine"],
+            "answer": "I am glad to hear that. How was your day?"
         },
 
         {
-        	"message": ["damnit ", "it", "hudutumoif"],
-        	"answer": "I'm sorry, but please try calm down"
+            "message": ["sad", "bad","upset","Sad","Bad","Upset"],
+            "answer": "Why don't you tell me why?"
+        },
+        {
+            "message": ["because","Because","be","of","and","that","have","not","with","around","would"],
+            "answer": "Do you think you're being fair?"
         },
 
         {
-        	"message": ["I", "am","calm"],
-        	"answer": "it is okay to cry"
+            "message": ["damnit ", "hudutumoif"],
+            "answer": "I'm sorry, but please try calm down"
+        },
+
+        {
+            "message": ["calm"],
+            "answer": "it is okay to cry"
+        },
+        
+        {
+          "message": ["leaving","going","goodbye"],
+          "answer": "I will see you later, various customer of mine, but I am still charging you for the full hour"
+          
         }
     ]
 }
