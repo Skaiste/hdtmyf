@@ -1,5 +1,6 @@
 import os
 import sys
+import re
 import json
 
 import requests
@@ -42,15 +43,12 @@ def webhook():
 					with open('messages.json') as answer_file:
 						answers = json.load(answer_file)
 					
-					
-					for i in range(0,7):
-						
-						if any(x in message_text for x in answers["messages"][i]["message"]):
-							send_message(sender_id, answers["messages"][i]["answer"])
+					for pair in answers["messages"]:
+						for messages in pair["message"]:
+							if findWholeWord(messages)(message_text):
+								send_message(sender_id, pair["answer"])
+								break
 	
-
-
-
 					if messaging_event.get("delivery"):  # delivery confirmation
 						pass
 
@@ -91,6 +89,8 @@ def log(message):  # simple wrapper for logging to stdout on heroku
     print str(message)
     sys.stdout.flush()
 
+def findWholeWord(w):
+  return re.compile(r'\b({0})\b'.format(w), flags=re.IGNORECASE).search
 
 if __name__ == '__main__':
     app.run(debug=True)
