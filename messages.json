@@ -14,7 +14,7 @@
             "answer": "Why don't you tell me why?"
         },
         {
-            "message": ["because","Because","be","of","and","that","have","not","with","around","would"],
+            "message": ["because","Because","around",],
             "answer": "Do you think you're being fair?"
         },
 
